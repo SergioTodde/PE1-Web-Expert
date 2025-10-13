@@ -1,1 +1,13 @@
-aap is dom en gek en slim
+# Node.js dependencies
+node_modules/
+ 
+# Build output
+dist/
+build/
+ 
+# Environment variables
+.env
+ 
+# OS-specific stuff
+.DS_Store
+Thumbs.db
