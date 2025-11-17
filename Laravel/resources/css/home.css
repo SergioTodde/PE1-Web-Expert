@@ -1,7 +1,7 @@
-header{
-    border: .2rem solid #000000;
-    border-radius: 0 1rem 1rem 1rem;
-    width: 50%;
-    padding: 1rem;
-    margin: 2rem auto;
+h1{
+    font-size: 5rem;
 }
+body{
+    background-color: #0a58ca;
+}
+
