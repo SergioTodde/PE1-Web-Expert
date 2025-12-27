@@ -14,6 +14,11 @@ use App\Http\Controllers\CoHostController;
 |--------------------------------------------------------------------------
 */
 
+// Password reset routes (public)
+Route::post('/auth/password/reset-request', [AuthController::class, 'resetPasswordRequest']);
+Route::post('/auth/password/reset', [AuthController::class, 'resetPassword']);
+Route::post('/auth/password/verify-token', [AuthController::class, 'verifyResetToken']);
+
 // Public routes
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);

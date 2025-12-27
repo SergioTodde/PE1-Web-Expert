@@ -12,12 +12,20 @@ class User extends Authenticatable
 
     protected $fillable = [
         'name',
+        'first_name',
+        'last_name',
         'email',
         'phone',
         'avatar',
         'role',
         'password',
     ];
+
+    // Voeg deze methode toe voor naam opbouw:
+    public function getFullNameAttribute()
+    {
+        return $this->first_name . ' ' . $this->last_name;
+    }
 
     protected $hidden = [
         'password',
